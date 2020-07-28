@@ -1,0 +1,485 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200727.205842.15627.0.001.json",
+    "dumpEventTime": "2020-07-27T20:58:42Z",
+    "dumpEventTimeStamp": "1595894322949",
+    "processId": 15627,
+    "threadId": null,
+    "cwd": "/home/avm/Projetos/React/React Native/apps/desafio-fundamentos-react-native",
+    "commandLine": [
+      "/home/avm/.nvm/versions/node/v12.16.2/bin/node",
+      "/home/avm/Projetos/React/React Native/apps/desafio-fundamentos-react-native/node_modules/jest-worker/build/workers/processChild.js"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "glibcVersionRuntime": "2.31",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.0-42-generic",
+    "osVersion": "#46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz",
+        "speed": 3100,
+        "user": 29380800,
+        "nice": 86200,
+        "sys": 4742600,
+        "idle": 59265300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz",
+        "speed": 3099,
+        "user": 28881800,
+        "nice": 73700,
+        "sys": 4600800,
+        "idle": 48628300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz",
+        "speed": 3100,
+        "user": 29133900,
+        "nice": 76100,
+        "sys": 4427700,
+        "idle": 48536900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz",
+        "speed": 3100,
+        "user": 29014700,
+        "nice": 41600,
+        "sys": 4484200,
+        "idle": 48633400,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "74:e5:f9:8b:d1:25",
+        "address": "192.168.0.136",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "74:e5:f9:8b:d1:25",
+        "address": "fe80::d9b7:ccbc:679e:6122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "AVM-Acer-Ubuntu"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b40285",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a033ef",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b76ffe",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b77379",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d23ad5",
+      "symbol": " [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d24166",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d309e5",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d31895",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d3434c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cfaf1b",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x000000000103d85e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    },
+    {
+      "pc": "0x00000000013c03d9",
+      "symbol": " [/home/avm/.nvm/versions/node/v12.16.2/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2185605120,
+    "totalCommittedMemory": 2184900824,
+    "usedMemory": 2048259224,
+    "availableMemory": 45393640,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33534056,
+        "capacity": 16759296,
+        "used": 377888,
+        "available": 16381408
+      },
+      "old_space": {
+        "memorySize": 1845633024,
+        "committedMemory": 1845599520,
+        "capacity": 1743414072,
+        "used": 1743377552,
+        "available": 36520
+      },
+      "code_space": {
+        "memorySize": 1216512,
+        "committedMemory": 795424,
+        "capacity": 754368,
+        "used": 748128,
+        "available": 6240
+      },
+      "map_space": {
+        "memorySize": 2363392,
+        "committedMemory": 2363120,
+        "capacity": 1234240,
+        "used": 1234240,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 302526464,
+        "committedMemory": 302526464,
+        "capacity": 302485824,
+        "used": 302485824,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 811.747,
+    "kernelCpuSeconds": 6.61129,
+    "cpuConsumptionPercent": 110.739,
+    "maxRss": 2548740096,
+    "pageFaults": {
+      "IORequired": 749,
+      "IONotRequired": 1093313
+    },
+    "fsActivity": {
+      "reads": 193320,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 708.616,
+    "kernelCpuSeconds": 3.77549,
+    "cpuConsumptionPercent": 96.3994,
+    "fsActivity": {
+      "reads": 178024,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "npm_package_dependencies_react_native": "0.62.2",
+    "SPACESHIP_ROOT": "/home/avm/.oh-my-zsh/custom/themes/spaceship-prompt",
+    "LANGUAGE": "pt_BR:pt:en",
+    "USER": "avm",
+    "npm_package_devDependencies_jest": "^24.9.0",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.16.2 linux x64",
+    "npm_package_scripts_android": "react-native run-android",
+    "npm_config_bin_links": "true",
+    "SSH_AGENT_PID": "1350",
+    "XDG_SESSION_TYPE": "x11",
+    "GIT_ASKPASS": "/snap/code/38/usr/share/code/resources/app/extensions/git/dist/askpass.sh",
+    "npm_node_execpath": "/home/avm/.nvm/versions/node/v12.16.2/bin/node",
+    "npm_config_init_version": "1.0.0",
+    "SHLVL": "1",
+    "npm_package_devDependencies_eslint_import_resolver_typescript": "^2.0.0",
+    "QT4_IM_MODULE": "ibus",
+    "HOME": "/home/avm",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "LESS": "-R",
+    "OLDPWD": "/home/avm/Projetos/React/React Native/apps/desafio-fundamentos-react-native",
+    "npm_package_devDependencies__typescript_eslint_parser": "^2.27.0",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_BIN": "/home/avm/.nvm/versions/node/v12.16.2/bin",
+    "TERM_PROGRAM_VERSION": "1.47.2",
+    "npm_package_devDependencies_eslint_config_prettier": "^6.10.1",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/var/lib/snapd/desktop/applications/code_code.desktop",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "NVM_INC": "/home/avm/.nvm/versions/node/v12.16.2/include/node",
+    "ZSH": "/home/avm/.oh-my-zsh",
+    "npm_config_init_license": "MIT",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "GTK_MODULES": "gail:atk-bridge",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "PAGER": "less",
+    "VSCODE_GIT_ASKPASS_MAIN": "/snap/code/38/usr/share/code/resources/app/extensions/git/dist/askpass-main.js",
+    "YARN_WRAP_OUTPUT": "false",
+    "npm_package_dependencies_json_server": "^0.16.1",
+    "npm_config_version_tag_prefix": "v",
+    "MANAGERPID": "1084",
+    "VSCODE_GIT_ASKPASS_NODE": "/snap/code/38/usr/share/code/code",
+    "npm_package_dependencies_react_native_safe_area_context": "^0.7.3",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_package_devDependencies_eslint_plugin_react_hooks": "^3.0.0",
+    "npm_package_dependencies_react_native_iphone_x_helper": "^1.2.1",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "4121",
+    "COLORTERM": "truecolor",
+    "npm_package_devDependencies_typescript": "^3.8.3",
+    "NVM_DIR": "/home/avm/.nvm",
+    "ZPFX": "/home/avm/.zinit/polaris",
+    "npm_package_devDependencies__types_react_native_vector_icons": "^6.4.5",
+    "IM_CONFIG_PHASE": "1",
+    "npm_package_devDependencies_prettier": "^2.0.4",
+    "npm_package_devDependencies_babel_jest": "^24.9.0",
+    "npm_package_devDependencies__babel_runtime": "^7.6.2",
+    "npm_package_dependencies_react_native_reanimated": "^1.8.0",
+    "npm_package_dependencies_react_native_gesture_handler": "^1.6.1",
+    "npm_package_dependencies__react_navigation_native": "^5.1.5",
+    "GTK_IM_MODULE": "ibus",
+    "LOGNAME": "avm",
+    "npm_package_devDependencies_eslint_plugin_import": "^2.20.1",
+    "JOURNAL_STREAM": "9:36229",
+    "_": "/usr/bin/yarn",
+    "npm_package_devDependencies_ts_jest": "^25.4.0",
+    "npm_package_devDependencies__types_jest": "^24.0.24",
+    "npm_package_private": "true",
+    "XDG_SESSION_CLASS": "user",
+    "npm_package_devDependencies__typescript_eslint_eslint_plugin": "^2.27.0",
+    "npm_package_devDependencies__testing_library_jest_native": "^3.1.0",
+    "npm_package_scripts_lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "USERNAME": "avm",
+    "TERM": "xterm-256color",
+    "npm_package_devDependencies__babel_core": "^7.6.2",
+    "npm_package_dependencies__react_navigation_stack": "^5.2.10",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "react-native start",
+    "npm_config_ignore_scripts": "",
+    "WINDOWPATH": "2",
+    "PMSPEC": "0uUpiPsf",
+    "ZSH_CACHE_DIR": "/home/avm/.oh-my-zsh/cache",
+    "npm_package_devDependencies_eslint_config_airbnb_typescript": "^7.2.1",
+    "npm_package_dependencies_axios": "^0.19.2",
+    "PATH": "/tmp/yarn--1595892761637-0.9880512484538317:/home/avm/Projetos/React/React Native/apps/desafio-fundamentos-react-native/node_modules/.bin:/home/avm/.config/yarn/link/node_modules/.bin:/home/avm/.yarn/bin:/home/avm/.nvm/versions/node/v12.16.2/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/avm/.nvm/versions/node/v12.16.2/lib/node_modules/npm/bin/node-gyp-bin:/home/avm/.nvm/versions/node/v12.16.2/bin/node_modules/npm/bin/node-gyp-bin:/path/to/dir:/home/avm/.zinit/polaris/bin:/path/to/dir:/home/avm/.nvm/versions/node/v12.16.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/avm/Android/Sdk/emulator:/home/avm/Android/Sdk/tools:/home/avm/Android/Sdk/tools/bin:/home/avm/Android/Sdk/platform-tools:/home/avm/android-studio/bin:/home/avm/Android/Sdk/platform-tools:/home/avm/Android/Sdk/emulator:/home/avm/Android/Sdk/tools:/home/avm/Android/Sdk/tools/bin:/home/avm/Android/Sdk/platform-tools:/home/avm/android-studio/bin:/home/avm/Android/Sdk/platform-tools",
+    "NODE": "/home/avm/.nvm/versions/node/v12.16.2/bin/node",
+    "SESSION_MANAGER": "local/AVM-Acer-Ubuntu:@/tmp/.ICE-unix/1463,unix/AVM-Acer-Ubuntu:/tmp/.ICE-unix/1463",
+    "INVOCATION_ID": "a485eaf3e39943af8fb311216909b563",
+    "npm_package_name": "GoMarketplace",
+    "XDG_MENU_PREFIX": "gnome-",
+    "BAMF_DESKTOP_FILE_HINT": "/var/lib/snapd/desktop/applications/code_code.desktop",
+    "XDG_RUNTIME_DIR": "/run/user/1000/snap.code",
+    "npm_package_devDependencies_metro_react_native_babel_preset": "^0.58.0",
+    "npm_package_devDependencies_eslint_plugin_jsx_a11y": "^6.2.3",
+    "npm_package_devDependencies_axios_mock_adapter": "^1.18.1",
+    "DISPLAY": ":0",
+    "npm_package_devDependencies_eslint_config_airbnb": "^18.1.0",
+    "LANG": "pt_BR.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "npm_package_devDependencies_react_test_renderer": "16.11.0",
+    "npm_package_devDependencies_eslint": "^6.8.0",
+    "npm_package_devDependencies__types_styled_components": "^5.1.0",
+    "npm_package_devDependencies__react_native_community_eslint_config": "^1.0.0",
+    "npm_package_dependencies_react_native_vector_icons": "^6.6.0",
+    "npm_package_dependencies__react_native_community_async_storage": "^1.9.0",
+    "XMODIFIERS": "@im=ibus",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "TERM_PROGRAM": "vscode",
+    "VSCODE_GIT_IPC_HANDLE": "/run/user/1000/snap.code/vscode-git-1f1757276b.sock",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "npm_lifecycle_script": "jest",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "GSETTINGS_SCHEMA_DIR": "/snap/code/38/usr/share/glib-2.0/schemas",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "npm_package_scripts_test": "jest",
+    "npm_package_scripts_ios": "react-native run-ios",
+    "npm_config_version_git_message": "v%s",
+    "SHELL": "/usr/bin/zsh",
+    "DISABLE_WAYLAND": "1",
+    "npm_lifecycle_event": "test",
+    "npm_package_version": "0.0.1",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"test\"],\"original\":[\"test\"]}",
+    "npm_package_devDependencies__types_react_native": "^0.62.0",
+    "npm_package_devDependencies__testing_library_react_native": "^5.0.3",
+    "npm_package_dependencies_intl": "^1.2.5",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_git_sign": "",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "npm_package_devDependencies_eslint_plugin_react": "^7.19.0",
+    "npm_package_dependencies_react_native_screens": "^2.4.0",
+    "npm_package_dependencies__react_native_community_masked_view": "^0.1.10",
+    "npm_config_strict_ssl": "true",
+    "QT_IM_MODULE": "ibus",
+    "SPACESHIP_VERSION": "3.11.2",
+    "npm_package_devDependencies_eslint_plugin_prettier": "^3.1.3",
+    "PWD": "/home/avm/Projetos/React/React Native/apps/desafio-fundamentos-react-native",
+    "JAVA_HOME": "/usr/lib/jvm/java-8-openjdk-amd64",
+    "npm_execpath": "/usr/share/yarn/bin/yarn.js",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "CLUTTER_IM_MODULE": "ibus",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "ANDROID_HOME": "/home/avm/Android/Sdk",
+    "NVM_CD_FLAGS": "-q",
+    "npm_package_dependencies_styled_components": "^5.1.0",
+    "npm_config_save_prefix": "^",
+    "npm_config_ignore_optional": "",
+    "INIT_CWD": "/home/avm/Projetos/React/React Native/apps/desafio-fundamentos-react-native",
+    "npm_package_devDependencies__types_react_test_renderer": "16.9.2",
+    "npm_package_dependencies_react": "16.11.0",
+    "NODE_ENV": "test",
+    "JEST_WORKER_ID": "1",
+    "FORCE_COLOR": "1"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 31158,
+      "hard": 31158
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
