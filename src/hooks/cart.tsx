@@ -40,7 +40,7 @@ const CartProvider: React.FC = ({ children }) => {
     }
 
     loadProducts();
-  }, [products]);
+  }, []);
 
   const addToCart = useCallback(
     async product => {
@@ -79,12 +79,12 @@ const CartProvider: React.FC = ({ children }) => {
           ...products.filter(prod => prod.id !== productCart.id),
           productCart,
         ]);
-
-        await AsyncStorage.setItem(
-          '@GoMarketplace:products',
-          JSON.stringify(products),
-        );
       }
+
+      await AsyncStorage.setItem(
+        '@GoMarketplace:products',
+        JSON.stringify(products),
+      );
     },
     [products],
   );
@@ -101,13 +101,13 @@ const CartProvider: React.FC = ({ children }) => {
             ...products.filter(prod => prod.id !== productCart.id),
             productCart,
           ]);
-
-          await AsyncStorage.setItem(
-            '@GoMarketplace:products',
-            JSON.stringify(products),
-          );
         }
       }
+
+      await AsyncStorage.setItem(
+        '@GoMarketplace:products',
+        JSON.stringify(products),
+      );
     },
     [products],
   );
